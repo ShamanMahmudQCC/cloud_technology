@@ -1,0 +1,271 @@
+h1.title{
+    border-bottom: dotted gray 3px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: green;
+
+}
+div.color1, div.color2, div.color3, div.color4, div.color5, div.color6{
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+div.color1{
+    background-color: rgb(242, 80, 34);
+}
+div.color2{
+    background-color: rgb(125, 182, 6);
+}
+div.color3{
+    background-color: rgb(5, 161, 232);
+}
+div.color4{
+    background-color: rgb(247, 180, 8);
+}
+section.rgbcolors, section.hexcolors{
+    display: inline-block;
+    width: 100%;
+
+}
+div.color5{
+    background-color: #4DA6FF;
+}
+div.color6{ 
+    background-color: #3D9123;
+}
+section.container{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+img.greenge{
+    width: 100%;
+}
+p.intro{
+    position: absolute;
+    top: 35%;
+    bottom: 35%;
+    right: 10%;
+    left: 10%;
+    color: rgba(0, 255, 100, 0.4);
+    background-color:rgba(2, 88, 2, 0.8);
+    font-size: 2em;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 255, 100, 1);
+    padding: 0.5em;
+}
+a.link{
+    display: block;
+    font-size: 0.6em;
+    background-color: #3D9123;
+    width: 30%;
+    margin: auto;
+    padding: 0.2em;
+    border-radius: 12px;
+    margin-top: 1em;
+    color: greenyellow;
+}
+a.link:hover{
+    background-color: green;
+    box-shadow: 0px 0px 10px 2px gray;
+}
+img.pin{
+    width: 100%;
+}
+h2.containertitle, p.par1, p.par2, p.par3{
+    position: absolute;
+    color: yellowgreen;
+}
+h2.containertitle{
+    top: 40%;
+    text-align: center;
+    left: 10%;
+    right: 10%;
+    font-size: 2.5em;
+}
+p.par1{
+    top:5%;
+    left:8%;
+}
+p.par2{
+    bottom: 10%;
+    right: 2%;
+}
+p.par3{
+    top: 30%;
+    right: 20%;
+}
+img.Sepia1{
+    width: 30%;
+    margin: 1%;
+    filter: sepia(10%);
+}
+img.Sepia2{
+    width: 30%;
+    margin: 1%;
+    filter: sepia(60%);
+}
+img.Sepia3{
+    width: 30%;
+    margin: 1%;
+    filter: sepia(100%);
+}
+img.Blur1{
+    width: 30%;
+    margin: 1%;
+    filter: blur(1px);
+}
+img.Blur2{
+    width: 30%;
+    margin: 1%;
+    filter: blur(5px);
+}
+img.Blur3{
+    width: 30%;
+    margin: 1%;
+    filter: blur(10px);
+}
+img.Invert1{
+    width: 30%;
+    margin: 1%;
+    filter: invert(10%);
+}
+img.Invert2{
+    width: 30%;
+    margin: 1%;
+    filter: invert(60%);
+}
+img.Invert3{
+    width: 30%;
+    margin: 1%;
+    filter: invert(100%);
+}
+/* CLASS EXERCISE */
+section.container2{
+    display: inline-block;
+    width: 100%;
+}
+div.imgleft, div.imgmiddle, div.imgright{
+    position: relative;
+    width: 30%;
+    margin: 1%;
+    float: left;
+}
+img.contianerimg1, img.contianerimg2, img.contianerimg3{
+    width:100%;
+}
+
+img.contianerimg3{
+    filter: sepia(100%);
+}
+
+p.img3title, p.img31, p.img32, p.img33{
+    position: absolute;
+    color: rgb(255, 3, 3);
+}
+p.img3title{
+    top: 40%;
+    text-align: center;
+    left: 10%;
+    right: 10%;
+    font-size: 2.5em;
+}
+p.img31{
+    top:5%;
+    left:8%;
+    font-size: 1.5em;
+}
+p.img32{
+    bottom: 10%;
+    right: 2%;
+    left: 50%;
+    font-size: 1.5em;
+
+}
+p.img33{
+    top: 30%;
+    right: 20%;
+    font-size: 1.5em;
+}
+
+img.contianerimg2{
+    filter: blur(5px);
+}
+
+p.Ebuild{
+    position: absolute;
+    top: 25%;
+    bottom: 30%;
+    right: 10%;
+    left: 10%;
+    color: rgba(100, 0, 0, 1);
+    background-color:rgba(202, 139, 22, 0.4);
+    font-size: 2em;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 255, 100, 1);
+    padding: 0.5em;
+}
+
+p.EBuildText{
+    position: absolute;
+    top: 40%;
+    bottom: 30%;
+    right: 10%;
+    left: 10%;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+}
+a.EBuild{
+    position: absolute;
+    top: 50%;
+    bottom: 43%;
+    right: 10%;
+    left: 10%;
+    display: block;
+    font-size: 1em;
+    background-color: #3D9123;
+    width: 30%;
+    margin: auto;
+    padding: 0.2em;
+    border-radius: 12px;
+    margin-top: 1em;
+    color: greenyellow;
+    text-align: center;
+}
+
+img.contianerimg1{
+    filter: invert(100%);
+}
+
+p.Bbridge{
+    position: absolute;
+    top: 70%;
+    bottom: 10%;
+    right: 10%;
+    left: 10%;
+    color: rgb(255, 255, 255);
+    background-color:rgba(0, 0, 0, 0.7);
+    font-size: 2em;
+    text-align: center;
+    border:3px solid white;
+    padding: 0.5em;
+}
+
+p.btxt{
+    position: absolute;
+    top: 80%;
+    bottom: 10%;
+    right: 10%;
+    left: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em;
+
+
+}
+
+/* USE PORTRAIT IMAGES */
+/*invert blur sepia */
