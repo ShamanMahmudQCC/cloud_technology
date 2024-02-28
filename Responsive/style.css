@@ -1,0 +1,93 @@
+*{box-sizing: border-box;}
+section.flexcontainer{
+    width: 80%;
+    border: solid gray 5px;
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+div.sqr{
+    height: 100px;
+    width: 200px;
+}
+div.sqr:nth-child(1){background-color: red;}
+div.sqr:nth-child(2){background-color: #69e900;}
+div.sqr:nth-child(3){background-color:  rgb(255, 0, 212);}
+/*The following is for cards*/
+main.maincontainer{
+    background-color: rgb(64, 113, 156);
+    width: 80%;
+    margin: 10%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section.card{
+    margin: 1em;
+    width: 300px;
+    height: 600px;
+    box-shadow: 2px 2px 6px black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+img.imgcard{
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+div.cardinfo{
+    height: 50%;
+    background-color: cadetblue;
+    padding: 0.75em;
+    font-size: 12px;
+
+}
+
+a.cardlink{
+    display: inline-block;
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+a.cardlink:hover{
+    background-color: crimson;
+    box-shadow: 0px 0px 6px 2px black;
+    transform: scale(1.02);
+    font-size: 1.05em;
+    text-decoration: none;
+}
+
+/*---------------- breakpoint 1700 px */
+
+@media only screen and (max-width:1700px){
+    main.maincontainer{background-color: orange;}
+    section.card{width: 500px; margin: 2em;}
+    img.imgcard{height: 60%;}
+}
+
+/*---------------- breakpoint 1450 px */
+
+@media only screen and (max-width:1450px){
+    main.maincontainer{background-color: violet;}
+    section.card{width: 700px; height: 875px;}
+}
+
+/*---------------- breakpoint 600 px */
+
+@media only screen and (max-width:600px){
+    main.maincontainer{background-color: lightblue}
+    section.card{width: 500px; height: auto;}
+    img.imgcard{height: auto;}
+    div.cardinfo{font-size: 9px; height: auto;}
+}
