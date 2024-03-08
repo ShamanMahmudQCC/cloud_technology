@@ -1,0 +1,75 @@
+*{box-sizing: border-box;}
+/* Title */
+section.title{
+    width: 100%;
+
+}
+div.titleDiv{
+    position: relative;
+
+}
+
+    img.backgroundTitle{
+        position: absolute;
+        width: 100%;
+        filter: blur(10px) opacity(80%);
+        transition: 0.5s;
+    }
+    img.backgroundTitle:hover{
+        filter: blur(0) opacity(90%);
+    }
+    img.arrow{
+        width: 3em;
+        position: absolute;
+    }
+
+    p.titleText{
+            width: 100%;
+            padding: 2em;
+            margin-top: 8em;
+            position: absolute;
+            background-color: green;
+        /* Protect yourself Online */
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    p.subtitleText{
+            width: 100%;
+            padding: 2em;
+            margin-top: 20em;
+            position: absolute;
+            background-color: green;
+        /* By me */
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    div.titleImageDiv{
+        width: 100%;
+
+
+    }
+    img.titleImages{
+        /* Add Links to jump to sections*/
+        padding: 0.5%;
+        width: 33%;
+
+    }
+
+/* Info1 */
+
+
+/* Info2 */
+
+
+/* Info3 */
+
+
+/* Cards */
+
+
+/* Outro */
