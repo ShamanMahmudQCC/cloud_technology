@@ -1,0 +1,11 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+:root{
+    --p: #068f28;
+    --s: rgb(238, 206, 63);
+}
+
+header{
+    background-color: var(--p);
+    color: var(--s);
+}
