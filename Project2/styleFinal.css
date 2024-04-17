@@ -1,0 +1,78 @@
+*{box-sizing: border-box; font-family: 'Courier New', Courier, monospace;}
+html{scroll-behavior: smooth;}
+
+body{
+    background-image: url(images/circuit.jpg);;
+}
+
+:root{
+    --p: #243074;
+    --s: rgb(25, 55, 45);
+}
+
+header{
+    color: rgb(255, 255, 255);
+    background-color: var(--p);
+}
+
+.primaryc{
+    background-color: var(--p);
+
+}
+
+.secondaryc{
+    background-color: var(--s);
+
+}
+
+.invert{
+    -webkit-filter: invert(100%);
+}
+
+
+.bord{
+
+    border:solid; border-color: black; border-width: 2px;
+}
+
+
+
+.simg:hover{
+    scale: 1.1;
+}
+
+
+
+footer.closer{
+    background-color: var(--p);
+    padding: 1em;
+    margin: 0%;
+    color: white;
+    font-size: medium;
+}
+
+section.footer{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: medium;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+div.contact{
+    font-size: medium;
+
+}
+div.social{
+    font-size: medium;
+
+}
+div.footinfo{
+    font-size: medium;
+    
+}
+h3.signature{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

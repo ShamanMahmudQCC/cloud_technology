@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shaman Mahmud Project 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleFinal.css">
+</head>
+  <body>
+<!--Title------------------------------------------------------------------------------------------------------------------------------->
+    <!--Logo Name NavBar-->
+    <header class="container-fliud">
+        <section class="row justify-content-center align-content">
+            <div class="col-1 text-end ms-3 mt-1">
+                <a href="Project2.html"><img class="m-2 invert" src="images/logo.png" width="50px" height="50px" alt=""></a>
+            </div>
+            <div class="col-4 text-center m-3">
+                <h2>Binary Bazaar</h2>
+            </div>
+            <div class="col-6 align-content mt-2 me-3 justify-content-center">
+                <a href="#Contact"><button style="width: 30%;" class="p-2 my-2">Contact</button></a>
+                <a href="#Browse"><button style="width: 30%;" class="p-2 my-2">Browse</button></a>
+                <a href="cart.html"><button style="width: 30%;" class="p-2 my-2">Cart</button></a>
+            </div>
+        </section>
+    </header>
+
+<!--Modal Window------------------------------------------------------------------------------------------------------------------------------->
+    <!--Various Products-->
+    <section class="carousel slide" data-bs-ride="carousel" style="height: 840px; width: 90%; margin: auto; overflow: hidden;" id="slideshow">
+        <div class="carousel-inner">
+                <!--slide 1-->
+            <div class="carousel-item active">
+                <img width="100%" src="images/phones.webp" alt="" style="display: block; height: 840px;">
+            </div>
+            <!--slide 2-->
+            <div class="carousel-item">
+                <img width="100%" src="images/laptops2.jpg" alt="" style="scale: 1.10; display: block; height: 840px;">
+            </div>
+            <!--slide 3-->
+            <div class="carousel-item">
+                <img width="100%" src="images/tablets.webp" alt="" style="display: block; height: 840px;">
+            </div>
+            <!--slide 4-->
+            <div class="carousel-item">
+                <img width="100%" src="images/gadgets.jpg" alt="" style="display: block; height: 840px;">
+            </div>
+            <!--slide 5-->
+            <div class="carousel-item">
+                <img width="100%" src="images/iphones.jpg" alt="" style="scale: 1.1;display: block; height: 840px;">
+            </div>
+        </div>
+        <!--left and right buttons-->
+        <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slideshow"><span class="carousel-control-prev-icon"></span></button>
+        <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#slideshow"><span class="carousel-control-next-icon"></span></button>
+        <!--slide indicators-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="4"></button>
+        </div>
+    </section>
+<!--Content holder------------------------------------------------------------------------------------------------------------------------------->
+<section style="width: 90%; margin: auto; background-color: white;">
+<!--Introduction------------------------------------------------------------------------------------------------------------------------------->
+
+
+        <section class="row justify-content-center p-3 m-0">
+            <div class="text-center p-2 primaryc text-light" style="border: solid; border-color: #243074; border-width: 20px;">
+                <p class="h1">Our Philosophy</p>
+            </div>
+            <div class="bord mb-3">
+                <div class="mb-3 text-dark">
+                    <p class="h4 p-3">Binary Bazaar believes in embracing the intersection of technology and humanity, striving for innovation while ensuring accessibility and inclusivity. It upholds ethical principles, prioritizing transparency, privacy, and security. With a commitment to continuous learning and improvement, Binary Bazaar aims to empower individuals and communities through the transformative potential of technology.</p>
+                </div>
+            </div>
+
+
+
+
+
+<!--Products------------------------------------------------------------------------------------------------------------------------------->
+    <!--3 Types of Products with carosel-> 4 cards each -> clicking = modal window-->
+        <!--Laptops, Phones, Tablets-->
+
+        <div id="Browse" class="text-center p-2 primaryc text-light" style="border: solid; border-color: #243074; border-width: 20px;">
+            <p class="h1">Phones</p>
+        </div>
+
+        <section class="row justify-content-center p-3 m-0">
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/iphone13.jpg" alt="" data-bs-toggle="modal" data-bs-target="#b1" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">iPhone 13</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$999</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b1">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/googpix6.webp" alt="" data-bs-toggle="modal" data-bs-target="#b2" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">Google Pixel 6</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$699</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b2">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/sgs21.webp" alt="" data-bs-toggle="modal" data-bs-target="#b3" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">Galaxy S21</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$799</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b3">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/oneplus9.webp" alt="" data-bs-toggle="modal" data-bs-target="#b4" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">OnePlus9</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$749</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b4">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center primaryc p-2 text-light" style="border: solid; border-color: #243074; border-width: 20px;">
+            <p class="h1">Tablets</p>
+        </div>
+
+        <section class="row justify-content-center p-3 m-0">
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/ipad.jpg" alt="" data-bs-toggle="modal" data-bs-target="#b5" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">iPad Pro</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$999</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b5">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/samsunggal7.jpg" alt="" data-bs-toggle="modal" data-bs-target="#b6" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">Galaxy Tab S7+</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$799</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b6">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/microsoft.webp" alt="" data-bs-toggle="modal" data-bs-target="#b7" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">Surface Pro 7</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$899</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b7">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/lenovotablet.jpg" alt="" data-bs-toggle="modal" data-bs-target="#b8" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">Lenovo P11 Pro</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$649</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b8">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center p-2 text-light primaryc" style="border: solid; border-color: #243074; border-width: 20px;">
+            <p class="h1">Laptops</p>
+        </div>
+
+        <section class="row justify-content-center p-3 m-0">
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/macbookpro16.webp" alt="" data-bs-toggle="modal" data-bs-target="#b9" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">MacBook Pro</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$1499</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b9">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/dellxps13.jpg" alt="" data-bs-toggle="modal" data-bs-target="#b10" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">Dell XPS 13</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$1199</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b10">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/hpspectre.webp" alt="" data-bs-toggle="modal" data-bs-target="#b11" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">HP Spectre x360</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$1299</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b11">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-5 col-lg-5 col-md-10 col-sm-12">
+                <img src="images/lenovothinkpadcarbon.jpeg" alt="" data-bs-toggle="modal" data-bs-target="#b12" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                <div class="bg-light text-light mb-3 bord" style="height: 250px;">
+                    <p class="p-3 m-0 h4 primaryc text-center">Lenovo X1 Carbon</p>
+                    <hr>
+                    <div>
+                        <p class="p-1 text-dark text-end bg-light m-3 bord">$1399</p>
+                    </div>
+                    <div class="text-center d-flex justify-content-between">
+                        <button type="button" class="m-3" data-bs-toggle="modal" data-bs-target="#b12">More Info</button>
+                        <button type="button" class="m-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Comment------------------------------------------------------------------------------------------------------------------------------->
+<hr>
+    <div class="col-lg-8 mx-auto p-3">
+        <label for="comment1" class="form-label h4">Comments and Feedback!</label>
+        <input id="comment1" type="text" class="form-control" required>
+        <div class="invalid-feedback">
+            Please provide a comment before submitting!
+        </div>
+        <div class="valid-feedback">
+            Thank you for your comment!
+        </div>
+        <button class="my-3" type="submit">Submit</button>
+    </div>
+</section>
+<!--Footer------------------------------------------------------------------------------------------------------------------------------->
+    <footer id="Contact" class="closer">
+        <section class="footer">
+            <div class="footinfo text-start">
+                <p>Project 1 - Informative Website</p>
+                <p class="signature">@ By Shaman Mahmud</p>
+                <p>Information displayed on this webpage is for educational purposes.</p>
+            </div>
+            <div class="contact text-start">
+                <p>Contact</p>
+                <p>Phone: (271)-828-1828</p>
+                <p>Email: Fake@email.com</p>
+            </div>
+            <div class="social text-start">
+                <p>Follow Us</p>
+                <a href="https://www.tiktok.com/channel/queensborough?lang=en"><abbr title = "Queensborough Community College TikTok"><img src="images/tiktok.svg" alt="Stay Connected with QCC on TikTok" width="60px"></abbr></a> 
+                <a href="https://www.youtube.com/user/CUNYQueensborough"><abbr title = "Queensborough Community College YouTube"><img src="images/youtube.svg" alt="Stay Connected with QCC on YouTube" width="60px"></abbr></a>
+                <a href="https://www.instagram.com/queensboroughcc_cuny/"><abbr title = "Queensborough Community College YouTube"><img src="images/instagram.svg" alt="Stay Connected with QCC on Instagram" width="60px"></abbr></a>
+            </div>
+        </section>
+        
+        <div class="modal" id="b1" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">iPhone 13</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The iPhone 13 boasts a stunning Super Retina XDR display and the powerful A15 Bionic chip, delivering exceptional performance and graphics for all your tasks and entertainment needs. With its advanced dual-camera system and cinematic mode, capturing your favorite moments in stunning detail has never been easier.</p>
+                    <img src="images/iphone13.jpg" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="modal" id="b2" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">Google Pixel 6</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                        <p>The Google Pixel 6 introduces Google's custom-built Tensor chip, enhancing AI capabilities for intuitive performance and advanced photography features. With its Pixel Imprint fingerprint sensor and Titan M2 security chip, it prioritizes user privacy and data protection. The Pixel 6's innovative camera system, featuring a 50MP main sensor and advanced computational photography, captures stunning images and videos with remarkable detail and color accuracy.</p>
+                        <img src="images/googpix6.webp" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="b3" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">Galaxy S21</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                        <p>The Samsung Galaxy S21 features a sleek design and a vibrant Dynamic AMOLED display, offering an immersive viewing experience. Equipped with a powerful Exynos 2100 or Snapdragon 888 processor (depending on the region), it delivers smooth performance for multitasking and gaming. Its versatile triple-camera system, including a 108MP main sensor, ensures exceptional photo and video quality in any lighting condition.</p>
+                        <img src="images/sgs21.webp" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="modal" id="b4" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">OnePlus9</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The OnePlus 9 combines flagship performance with a sleek design, powered by the Qualcomm Snapdragon 888 processor for seamless multitasking and gaming. Its Fluid AMOLED display offers smooth visuals and vibrant colors, perfect for streaming your favorite content. With its Hasselblad-tuned triple-camera system, including a 48MP main sensor, the OnePlus 9 delivers stunning photos and videos with natural color reproduction and enhanced clarity.</p>
+                    <img src="images/oneplus9.webp" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+          <div class="modal" id="b5" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">iPad Pro</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The iPad Pro is a powerhouse tablet with a Liquid Retina XDR display, powered by the M1 chip, offering desktop-class performance for demanding tasks and creative workflows. With support for the Apple Pencil and Magic Keyboard, it transforms into a versatile productivity tool or a canvas for digital art.</p>
+                    <img src="images/ipad.jpg" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="modal" id="b6" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">Galaxy Tab S7+</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The Samsung Galaxy Tab S7+ features a stunning Super AMOLED display and is powered by a Qualcomm Snapdragon 865+ processor, providing smooth performance for multitasking and entertainment. With the included S Pen and optional keyboard accessory, it offers a seamless transition between productivity and creativity.</p>
+                    <img src="images/samsunggal7.jpg" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="modal" id="b7" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">Surface Pro 7</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The Microsoft Surface Pro 7 is a versatile 2-in-1 device that blurs the line between tablet and laptop. It features a high-resolution PixelSense display and is powered by an Intel Core processor, offering laptop-class performance in a portable form factor. With its signature kickstand and detachable Type Cover, the Surface Pro 7 adapts to various usage scenarios, from productivity tasks in laptop mode to creative endeavors in studio mode. It runs full Windows 10, providing access to a wide range of desktop applications and productivity tools, making it an ideal choice for professionals who need the flexibility of a tablet and the power of a laptop.</p>
+                    <img src="images/microsoft.webp" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="modal" id="b8" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">Lenovo P11 Pro</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The Lenovo Tab P11 Pro is a premium Android tablet known for its stunning 2K OLED display and sleek design. Powered by a Qualcomm Snapdragon 730G processor, it offers smooth performance for everyday tasks and multimedia consumption. With support for the optional Lenovo Precision Pen 2 and an optional keyboard accessory, the Tab P11 Pro caters to both productivity and creativity, making it suitable for work, entertainment, and digital art. Its long battery life and lightweight design further enhance its appeal as a versatile and portable companion for on-the-go users.</p>
+                    <img src="images/lenovotablet.jpg" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="modal" id="b9" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">MacBook Pro</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The MacBook Pro is Apple's flagship laptop, renowned for its premium build quality, sleek design, and powerful performance. Available in various configurations, it features a stunning Retina display, offering vibrant colors and sharp details for an immersive viewing experience. Powered by Apple's custom-designed M1 or Intel processors, it delivers exceptional performance for demanding tasks such as video editing, music production, and software development. With its innovative Touch Bar, spacious trackpad, and macOS ecosystem, the MacBook Pro provides a seamless and intuitive user experience, making it a top choice for professionals and creative professionals.</p>
+                    <img src="images/macbookpro16.webp" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="modal" id="b10" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">Dell XPS 13</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The Dell XPS 13 is a highly acclaimed ultraportable laptop known for its compact design, stunning InfinityEdge display, and impressive performance. Available with the latest Intel Core processors, it offers fast and responsive computing power for productivity tasks, multimedia consumption, and light gaming. Its virtually borderless display maximizes screen real estate in a compact form factor, while its premium build quality and long battery life make it an excellent choice for professionals and students who value portability and performance.</p>
+                    <img src="images/dellxps13.jpg" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="modal" id="b11" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">HP Spectre x360</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The HP Spectre x360 is a premium convertible laptop that combines sleek design with versatile functionality. Featuring a 360-degree hinge, it can be used in laptop, tent, stand, and tablet modes, offering flexibility for various usage scenarios. Powered by Intel Core processors, it delivers smooth performance for productivity tasks, creative projects, and multimedia consumption. With its premium craftsmanship, vibrant display, and long battery life, the Spectre x360 is a stylish and capable laptop that caters to professionals and creatives who demand both performance and versatility.</p>
+                    <img src="images/hpspectre.webp" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="modal" id="b12" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header p-3 primaryc">
+                  <h5 class="modal-title">Lenovo X1 Carbon</h5>
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="bg-dark p-3" style="height: auto;">
+                    <p>The Lenovo ThinkPad X1 Carbon is a flagship business laptop renowned for its durability, performance, and legendary ThinkPad reliability. Constructed from carbon fiber, it combines lightweight portability with rugged durability, making it ideal for professionals who are constantly on the move. Powered by Intel Core processors, it offers powerful performance for productivity tasks, multitasking, and business applications. With its legendary ThinkPad keyboard, robust security features, and long battery life, the ThinkPad X1 Carbon is a top choice for business users who prioritize performance, security, and reliability in a sleek and professional package.</p>
+                    <img src="images/lenovothinkpadcarbon.jpeg" alt="" style="margin-top: 20px; margin-bottom: 20px;border: solid; border-color: rgb(25, 55, 45); border-width: 10px; height: 260px;" class="simg w-100 d-block">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="text-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="text-dark">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+  </html>
