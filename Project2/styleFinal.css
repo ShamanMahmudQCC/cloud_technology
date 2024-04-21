@@ -76,3 +76,29 @@ div.footinfo{
 h3.signature{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.item{
+    height: 400px;
+}
+.simg{height: 300px;}
+
+.imagecaro{
+    height: 840px;
+}
+
+/*---------------- breakpoint 1700 px */
+
+@media only screen and (max-width:1700px){
+    .item{height: 420px;}
+    .simg{height: 250px}
+    .imagecaro{height: 700px;}
+    
+}
+
+/*---------------- breakpoint 1450 px */
+
+@media only screen and (max-width:991px){
+    .item{height: auto;}
+    .simg{height: auto;}
+    .imagecaro{height: 400px;}
+}
