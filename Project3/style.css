@@ -23,25 +23,48 @@ html{scroll-behavior: smooth;}
     color: var(--s);
 }
 
+nav{
+    position: relative;
+    transition-duration: 1s;
+}
+
+nav:hover{
+    translate: 200px;
+}
 
 .textShadow {
+    font-family: 'Courier New', Courier, monospace;
     z-index: 10;
     color: var(--pd);
-    transform: skewX(-50deg) skewY(0);
+    transform: skewX(50deg) skewY(0);
     text-shadow: 4px 4px 2px var(--pd), 0 0 1em var(--pd), 0 0 0.2em var(--pd);
   }
 
+.textShadows{
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 10;
+    color: var(--sd);
+    transform: skewX(50deg) skewY(0);
+    text-shadow: 4px 4px 2px var(--sd), 0 0 1em var(--sd), 0 0 0.2em var(--sd);
+}
+
+.textShadowt{
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 10;
+    color: white;
+    transform: skewX(50deg) skewY(0);
+    text-shadow: 4px 4px 2px white, 0 0 1em white, 0 0 0.2em white;
+}
+
 .textOutline {
-    color: black;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+
   }
 
-
-
-
-
-
-
+  .invert{
+    -webkit-filter: invert(100%);
+}
 
 footer.closer{
     background-color: black;
