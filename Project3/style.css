@@ -7,6 +7,50 @@ html{scroll-behavior: smooth;}
     --sd: #3354ad;
 }
 
+.gH{
+    height: 100vh;
+
+
+}
+.nt{
+    margin-top: 200px;
+
+}
+
+.mrgH{
+    margin-top: 50vh;
+    margin-right: -5vh;
+    height: 10vh; 
+    width: 10vh;
+}
+
+.mtt{
+    top: 30vh;
+
+
+}
+
+.footd{
+    font-size: 60px;
+
+}
+
+.headd{
+    font-size: 120px;
+
+}
+
+.cardHolder{
+    margin-top: 140px;
+
+}
+
+.navimg{
+    min-height: 33px;
+    max-height: 100px; 
+    height: 8vh;
+}
+
 .primary{
     background: var(--p);
 }
@@ -32,6 +76,24 @@ nav:hover{
     translate: 200px;
 }
 
+.sliding1{
+    transition-duration: 1s;
+}
+
+.sliding1:hover{
+
+    translate: 95%;
+}
+
+.sliding2{
+    transition-duration: 1s;
+}
+
+.sliding2:hover{
+
+    translate: 95%;
+}
+
 .textShadow {
     font-family: 'Courier New', Courier, monospace;
     z-index: 10;
@@ -54,6 +116,28 @@ nav:hover{
     color: white;
     transform: skewX(50deg) skewY(0);
     text-shadow: 4px 4px 2px white, 0 0 1em white, 0 0 0.2em white;
+}
+
+.textShadowg{
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 10;
+    color: rgb(48, 48, 48);
+    transform: skewX(50deg) skewY(0);
+    text-shadow: 4px 4px 2px rgb(48, 48, 48), 0 0 1em rgb(48, 48, 48), 0 0 0.2em rgb(48, 48, 48);
+}
+
+.spacings{
+    width: 5%; 
+    right: -5%;
+    height: 40%;
+    top: 10%;
+}
+
+.spacings2{
+    width: 5%; 
+    right: -5%;
+    height: 40%;
+    top: 50%;
 }
 
 .textOutline {
@@ -95,3 +179,52 @@ div.social{
 div.footinfo{
     font-size: medium;
 }
+
+.name{
+    left: 21vw;
+
+}
+
+.names{
+    left: 18vw;
+
+}
+
+.edu{
+    left: 14vw;
+    font-size: 80px;
+
+}
+
+.edus{
+    left: 12vw;
+    font-size: 80px;
+}
+
+
+
+
+@media only screen and (max-height:800px){
+    .gH{height: 900px;}
+    .mrgH{ margin-top: 230px; margin-right: -24px; width: 56px; height: 56px;}
+    .mtt{top: 100px}
+    
+}
+
+@media only screen and (max-width:1250px){
+    .mrgH{ margin-top: 230px; margin-right: -24px; width: 56px; height: 56px;}
+    .name{left:18vw}
+    .names{left: 15vw;}
+    .edu{left:12vw; font-size: 6vw;}
+    .edus{left: 9vw; font-size: 6vw;}
+    .footd{font-size: 4vw;}
+    .cardHolder{margin-top: 11vw;}
+    .headd{font-size: 8vw;}
+    .spacings{
+        width: 10%; right: -10%; top: 10%; height: 30%;
+    }
+    .spacings2{
+        width: 10%; right: -10%; top: 40%; height: 30%;
+    }
+}
+    
