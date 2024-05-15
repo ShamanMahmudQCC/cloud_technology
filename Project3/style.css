@@ -1,10 +1,10 @@
 *{box-sizing: border-box;}
 html{scroll-behavior: smooth;}
 :root{
-    --p: #33ad43;
-    --pd: #1f6b29;
+    --p: #3354ad;
+    --pd: #4677fc;
     --s: #4677fc;
-    --sd: #3354ad;
+    --sd: #1e3164;
 }
 
 .gH{
@@ -69,7 +69,7 @@ html{scroll-behavior: smooth;}
 
 nav{
     position: relative;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 nav:hover{
@@ -77,30 +77,59 @@ nav:hover{
 }
 
 .sliding1{
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 .sliding1:hover{
 
-    translate: 95%;
+    translate: 94%;
 }
 
 .sliding2{
-    transition-duration: 1s;
+    transition-duration: 0.5s;    
 }
 
 .sliding2:hover{
 
-    translate: 95%;
+translate: 94%;
+}
+
+.pimg{
+
+    transition-duration: 0.5s;
+    z-index: 10; border: groove; border-color: black; border-width: 5px;
+}
+
+.pimg:hover{
+    translate: -1vw;
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.05);
+}
+
+.pop{
+    transition-duration: 0.5s;
+    top:8%; left: 30%; position: relative; z-index: 10; width: 90%;border: groove; border-color: black; border-width: 5px;
+}
+
+.pop:hover{
+    translate: -1vw;
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.05);
+}
+
+.SZ{
+    width: 40%;
 }
 
 .textShadow {
     font-family: 'Courier New', Courier, monospace;
     z-index: 10;
-    color: var(--pd);
+    color: var(--p);
     transform: skewX(50deg) skewY(0);
-    text-shadow: 4px 4px 2px var(--pd), 0 0 1em var(--pd), 0 0 0.2em var(--pd);
+    text-shadow: 4px 4px 2px var(--p), 0 0 1em var(--p), 0 0 0.2em var(--p);
   }
+
+
 
 .textShadows{
     font-family: 'Courier New', Courier, monospace;
@@ -146,8 +175,15 @@ nav:hover{
 
   }
 
-  .invert{
+.invert{
     -webkit-filter: invert(100%);
+}
+
+.marginS{
+    top: 20%
+}
+.marginS2{
+    top: 50%
 }
 
 footer.closer{
@@ -185,11 +221,25 @@ div.footinfo{
 
 }
 
+.SZI{
+    width: 100px; height: 100px;
+}
+
 .names{
     left: 18vw;
 
 }
+.namess{left:22vw; top:2%;}
+.namesss{left: 19vw; top:2%;}
 
+.name2{
+    left: 15vw;
+
+}
+.names2{
+    left: 12vw;
+
+}
 .edu{
     left: 14vw;
     font-size: 80px;
@@ -201,30 +251,111 @@ div.footinfo{
     font-size: 80px;
 }
 
+.txt{
+    font-size: 1vw;
+}
 
+.w{
+    width: 100%;
+    min-width: 250px;
+
+}
+
+.imgEdu{
+    width: 25%;
+    max-width: 215px;
+    max-height: 215px;;
+
+}
+.fontedu{font-size:medium;}
 
 
 @media only screen and (max-height:800px){
     .gH{height: 900px;}
     .mrgH{ margin-top: 230px; margin-right: -24px; width: 56px; height: 56px;}
     .mtt{top: 100px}
+    .txt{font-size: medium;}
     
 }
 
+
+
 @media only screen and (max-width:1250px){
-    .mrgH{ margin-top: 230px; margin-right: -24px; width: 56px; height: 56px;}
+    .mrgH{margin-top: 230px; margin-right: -24px; width: 56px; height: 56px;}
     .name{left:18vw}
     .names{left: 15vw;}
+    .namess{left:22vw; top:1%;}
+    .namesss{left: 18vw; top:1%;}
     .edu{left:12vw; font-size: 6vw;}
     .edus{left: 9vw; font-size: 6vw;}
     .footd{font-size: 4vw;}
     .cardHolder{margin-top: 11vw;}
-    .headd{font-size: 8vw;}
+    .headd{font-size: 80px;}
     .spacings{
-        width: 10%; right: -10%; top: 10%; height: 30%;
+        width: 6%; right: -6%; top: 10%; height: 30%;
     }
     .spacings2{
-        width: 10%; right: -10%; top: 40%; height: 30%;
+        width: 6%; right: -6%; top: 40%; height: 30%;
     }
+    .txt{font-size: medium;}
+    .edu{left:18vw; font-size: 6vw;}
+    .edus{left: 15vw; font-size: 6vw;}
+    .imgEdu{width: 25%; max-width: 250px; max-height: 250px;}
+    .pop{
+        top:8%; left: 40%;
+
+    }
+    .marginS{
+        top: 15%;
+    }
+    .marginS2{
+        top: 61%;
+    }
+    .SZ{
+        width: 80%;
+    }
+
+    .SZI{
+        width: 90px; height: 90px;
+    }
+
+}
+
+@media only screen and (max-width:995px){
+    .name{left:15vw;}
+    .names{left: 12vw;}
+    .namess{left:15vw; top: 2%;}
+    .namesss{left: 12vw; top: 2%;}
+    .txt{font-size: 1.6vw;}
+    .imgEdu{width: 40%; max-width: 100px; max-width: 100px;}
+    .fontedu{font-size: small;}
+    .marginS{
+        top: 15%;
+    }
+    .marginS2{
+        top: 59%;
+    }
+
+}   
+    
+@media only screen and (max-width:770px){
+
+    .txt{font-size: medium;}
+
+    .imgEdu{width: 40%; max-width: 100px; max-width: 100px;}
+    .pop{top:2%;}
+    .fontedu{font-size: small;}
+    .marginS{
+        top: 9%;
+    }
+    .marginS2{
+        top: 48%;
+    }
+    .SZI{
+        width: 70px; height: 70px;
+    }
+    .headd{font-size: 45px;}
+    .namess{left:16vw; top: 2%;}
+    .namesss{left: 13vw; top: 2%;}
 }
     
